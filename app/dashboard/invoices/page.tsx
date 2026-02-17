@@ -21,7 +21,6 @@ export default async function Page(props: {
     const query = serarchParams?.query || '';
     const currentPage = Number(serarchParams?.page) || 1;
     const totalPage = await fetchInvoicesPages(query);
-    console.log(currentPage);
     return (
         <div className="w-full">
             <div className="flex w-full items-center justify-between">
